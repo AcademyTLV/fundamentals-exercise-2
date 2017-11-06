@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yossisegev.cityguide.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/activiy_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/london"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/activiy_main_header"
+        android:layout_marginLeft="16dp"
+        android:background="@color/header_text_bg"
+        android:text="Welcome to London"
+        android:textColor="@color/header_text"
+        android:textSize="30sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activiy_main_header"
+        android:layout_above="@id/activity_main_learn_more"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Founded:"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/regular_text_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="50 AD"
+                android:textColor="@color/description_text"
+                android:textSize="@dimen/regular_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Population:"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/regular_text_size"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="8.788 million"
+                android:textColor="@color/description_text"
+                android:textSize="@dimen/regular_text_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Details:"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/regular_text_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times."
+            android:textColor="@color/description_text"
+            android:textSize="@dimen/small_text_size"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_learn_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="LEARN MORE!"/>
+
+</RelativeLayout>
